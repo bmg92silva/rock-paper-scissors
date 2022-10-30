@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+  <head>
+    <!-- Import Roboto Font -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+
+
+  <body onload="gamePlay()">
+    <!-- CONTENT 1 -->
+    <div class="cont1">
+      <h2 class="cont1-title">Choose your move</h2>
+      <div class="cont1-boxes">
+        <div>
+          <img class="cont1-box" id="rock"
+            src="img/rock.jpg"
+            alt="Rock"
+            width="200"
+            height="200"
+          />
+          <p class="cont1-text">Rock</p>
+        </div>
+        <div>
+          <img class="cont1-box" id="paper"
+            src="img/paper.jpg"
+            alt="Paper"
+            width="200"
+            height="200"
+          />
+          <p class="cont1-text">Paper</p>
+        </div>
+        <div>
+          <img class="cont1-box" id="scissor"
+            src="img/scissor.jpg"
+            alt="Scissor"
+            width="200"
+            height="200"
+          />
+          <p class="cont1-text">Scissor</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CONTENT 3 -->
+    <div class="cont3">
+      <div class="cont3-box">
+        <div class="cont3-text">
+          <h3> <span id="scores"></span> </h3>
+        </div>
+        <button class="cont3-button" id="restart">Restart</button>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <p class="footer">The Odin Project</p>
+  </body>
 </html>
